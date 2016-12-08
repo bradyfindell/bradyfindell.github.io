@@ -1,39 +1,33 @@
-exclude:
-  - "/vendor/"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "README.md"
-  - "LICENSE.md"
-  - "*.gemspec"
-
-keep_files:
-  - "CNAME"
-  - ".git"
-  - ".gitignore"
-
-
 # Site settings
-title: Head Over Reels
-subtitle: ""
-# Base URL of site. It should always start with a slash,
-# and never end with a slash. Set it to a blank value if hosting at the
-# root of your server.
-# baseurl: "/" # the subpath of your site
-url: "http://bradyfindell.github.io" # the base hostname & protocol for your site
+email: ''
+baseurl: "bradyfindell.github.io"
+paginate: 5
+paginate_path: "/blog/page-:num"
+google_analytics:
 
-cover: "/assets/cover.png"
-logo: "/assets/logo.png"
+# SEO settings
+title: Head Over Reels
+description: Film Reviews by Brady Findell
+url: "http://www.headoverreals.com"
+twitter_username:
+default_img:
+
+# Profile settings
+name: Brady Findell
+profile_img:
+profile:
+social:
+  github:
 
 # Build settings
+include: ["_categories"]
+exclude: ["_screenshots", "Gemfile", "Gemfile.lock"]
 markdown: kramdown
+permalink: /:year/:month/:day/:title/
 
-# Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+# Sass
+sass:
+  style: compressed
 
-# Category descriptions (for archive pages)
-descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
-
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+# Gems
+gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]
