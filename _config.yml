@@ -3,7 +3,7 @@ email: ''
 baseurl: ''
 paginate: 5
 paginate_path: "/blog/page-:num"
-google_analytics:
+google_analytics: UA-89033402-1
 
 # SEO settings
 title: Head Over Reels
@@ -11,6 +11,10 @@ description: Film Reviews by Brady Findell
 url: "http://www.headoverreals.com"
 twitter_username:
 default_img:
+
+collections:
+  videos:
+    output: true
 
 # Profile settings
 name: Brady Findell
